@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: rgba(226, 226, 226, 1);
+
+    --fonst-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-cyan);
+}
+
+/* .bg{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.bg div{
+    height: 100%;
+    width: 50%;
+}
+
+.bg1 img{
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg2 img{
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+/* Card */
+
+.card{
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.1);
+}
+
+/* Card Body */
+
+.card__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-cover{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.body-cover img{
+    width: 100%;
+    height: 100%;
+}
+
+.body-photo{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 110px;
+    width: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+
+    transform: translateY(-50%);
+}
+
+.body-photo img{
+    height: 100%;
+}
+
+.body-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    transform: translateY(-100%);
+}
+
+.body-info .name{
+    font-size: var(--fonst-size);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.body-info .city{
+    font-size: 15px;
+    font-weight: 500
+}
+
+
+/* Card Footer */
+
+.card__footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 20px;
+
+    border-top: 1px solid var(--dark-gray);
+}
+
+.card__footer .num{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    margin: 10px;
+    font-size: var(--fonst-size);
+}
+
+.num .number{
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.num .type{
+    font-weight: 500;
+    font-size: 15px;
+}
